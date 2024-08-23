@@ -1,0 +1,49 @@
+
+
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 700 */
+
+body{
+    margin:0 ;
+    padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.title{
+    background-color: black;
+    padding: 2rem;
+    color: white;
+}
+.section-body{
+    padding-top: 5rem;
+}
+.text-center{
+    text-align: center;
+}
+.center-img{
+    display:flex;
+    justify-content: center;
+}
+.box-styling{
+    border: 2px black solid;
+    display:flex;
+    justify-content: center;
+    max-width: 40%;
+    box-shadow: 0px 20px 5px 15px rgba(0,0,0,0.65);
+    border-radius: 5%;
+    cursor: pointer;
+}
+.padding-bottom{
+    padding-bottom: 5rem;
+}
+.img-divs{
+    max-width: 80%
+
+} 
