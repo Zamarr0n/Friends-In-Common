@@ -21,6 +21,9 @@ h1, h2, h3 {
     padding: 2rem;
     color: white;
 }
+.heading{
+    position:fixed;
+}
 .section-body{
     padding-top: 5rem;
 }
