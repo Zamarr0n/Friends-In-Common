@@ -5,37 +5,54 @@
 <weight>: Use a value from 100 to 700 */
 
 body{
-    margin:0 ;
+    margin:0;
     padding: 0;
+    background-color: black ;
 }
+main { 
+    color: white;
+}
+
+#encuesta #instagram{
+    cursor: pointer;
+}
+
 
 h1, h2, h3 {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  font-size: 40px;
 }
-
+p{
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 200;
+}
 .title{
-    background-color: black;
+    background-color: white;
     padding: 2rem;
-    color: white;
+    color: black;
+}
+.center-title{
+    justify-content: center;
+    width: 100%;
+    margin-top: 25%;
 }
 .heading{
     position:fixed;
 }
-.section-body{
-    padding-top: 5rem;
-}
 .text-center{
     text-align: center;
 }
-.center-img{
+.center-ig{
     display:flex;
     justify-content: center;
 }
 .box-styling{
-    border: 2px black solid;
+    border-bottom: 2px black solid;
     display:flex;
     justify-content: center;
     max-width: 40%;
@@ -43,10 +60,66 @@ h1, h2, h3 {
     border-radius: 5%;
     cursor: pointer;
 }
+.box-style{
+    border: 2px solid white ;
+    width: 50%;
+    margin: 0 auto;
+}
 .padding-bottom{
     padding-bottom: 5rem;
 }
 .img-divs{
     max-width: 80%
-
 } 
+.padding-bottom{
+    padding-bottom: 70%;
+    transition: all 1s;
+}
+.animation{
+    animation: text-Appear 1s ease-in 1s 1 normal both;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    cursor: pointer;
+}
+@keyframes text-Appear {
+    from{ 
+        transform: translateX(-800px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width: 800px) {
+    .img-divs{
+        max-width: 60%
+    } 
+    .center-title{
+        justify-content: center;
+        width: 100%;
+        margin-top: 55%;
+    }
+    .padding-bottom{
+        padding-bottom: 90%;
+    }
+    h1, h2, h3 {
+        font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 20px;
+      }
+}

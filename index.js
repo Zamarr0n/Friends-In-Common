@@ -9,3 +9,20 @@ instagram.addEventListener("click", function(){
     event.preventDefault()
     window.location.href = "https://www.instagram.com/friendsincommon.mx/?hl=en"
 })
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove("show");
+        }
+    } )
+})
+
+const hiddenElements = document.querySelectorAll(".hidden");
+
+hiddenElements.forEach((object) => observer.observe(object));
+
