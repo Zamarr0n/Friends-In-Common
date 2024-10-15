@@ -12,7 +12,10 @@ body{
 main { 
     color: white;
 }
-
+#tel{
+    color: white;
+    text-decoration: none;
+}
 iframe{
     width: 100%;
     height: 800px;
