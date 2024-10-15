@@ -1,4 +1,5 @@
 const encuesta = document.getElementById('encuesta');
+const menu = document.getElementById("Menu")
 const instagram = document.getElementById('instagram');
 
 encuesta.addEventListener("click", function(){
@@ -8,6 +9,10 @@ encuesta.addEventListener("click", function(){
 instagram.addEventListener("click", function(){
     event.preventDefault()
     window.location.href = "https://www.instagram.com/friendsincommon.mx/?hl=en"
+})
+
+menu.addEventListener("click", function(){
+    window.location.href = "./Menu/Full_Menu.pdf"
 })
 
 
